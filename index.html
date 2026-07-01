@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모아나 2: 새로운 모험</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700&display=swap');
+        body { font-family: 'Pretendard', sans-serif; }
+        .ocean-gradient {
+            background: linear-gradient(180deg, #0f172a 0%, #1e40af 50%, #3b82f6 100%);
+        }
+        iframe{margin:0 auto}
+    </style>
+
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 p-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-900">Moana 2</h1>
+            <div class="space-x-6 text-sm font-semibold">
+                <a href="#about" class="hover:text-blue-600 transition">소개</a>
+                <a href="#characters" class="hover:text-blue-600 transition">캐릭터</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="ocean-gradient min-h-screen flex items-center justify-center text-white p-6 pt-24">
+        <div class="text-center space-y-6">
+            <h2 class="text-5xl md:text-7xl font-extrabold tracking-tight">바다가 부르는 새로운 여정</h2>
+            <p class="text-xl md:text-2xl opacity-90">더 넓은 세상, 잊지 못할 모험이 시작됩니다.</p>
+            <div class="pt-8">
+                <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})" class="bg-white text-blue-900 px-8 py-3 rounded-full font-bold hover:scale-105 transition transform">
+                    이야기 더 보기
+                </button>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/izunRLYzHU0?si=z8Ux9K1KGo5CY7_9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 px-6 max-w-4xl mx-auto">
+        <h3 class="text-3xl font-bold mb-8 text-center">줄거리</h3>
+        <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100">
+            <p class="text-lg leading-relaxed text-gray-700">
+                모아나는 조상들로부터 부름을 받고, 이전에는 가보지 못한 멀고 위험한 바다로 떠나야 합니다. 
+                그녀의 곁에는 여전히 장난꾸러기 반신반인 마우이가 함께하며, 두 사람은 새로운 동료들과 함께 
+                바다를 건너 세상의 균형을 되찾기 위한 거대한 모험을 펼칩니다.
+            </p>
+        </div>
+    </section>
+
+    <section id="characters" class="py-20 bg-gray-100 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-bold mb-12 text-center">주요 등장인물</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Character 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-md text-center">
+                    <div class="w-full h-48 bg-blue-200 rounded-xl mb-4 flex items-center justify-center text-4xl">🌊</div>
+                    <h4 class="text-xl font-bold">모아나</h4>
+                    <p class="text-gray-600 mt-2">바다의 선택을 받은 항해사</p>
+                </div>
+                <!-- Character 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-md text-center">
+                    <div class="w-full h-48 bg-orange-200 rounded-xl mb-4 flex items-center justify-center text-4xl">💪</div>
+                    <h4 class="text-xl font-bold">마우이</h4>
+                    <p class="text-gray-600 mt-2">바람과 바다의 반신반인</p>
+                </div>
+                <!-- Character 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-md text-center">
+                    <div class="w-full h-48 bg-teal-200 rounded-xl mb-4 flex items-center justify-center text-4xl">🐥</div>
+                    <h4 class="text-xl font-bold">헤이헤이 & 푸아</h4>
+                    <p class="text-gray-600 mt-2">모아나의 든든한 친구들</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Moana Official Fan Introduction. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
